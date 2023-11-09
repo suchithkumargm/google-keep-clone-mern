@@ -1,0 +1,54 @@
+.container-note{
+    margin: 50px 60px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.notes{
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 25px 30px;
+    background-color: #D5E3E7;
+    padding: 20px;
+}
+
+.title{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.content{
+    color: black;
+    text-align: start;
+}
+
+.delete{
+    color: #D52506;
+    position:absolute;
+    bottom: 10%;
+    right: 10%;
+    cursor: pointer;
+}
+
+.delete:hover{
+    padding: 2px;
+    background-color: whitesmoke;
+}
+
+.edit{
+    color: #2C9706;
+    position:absolute;
+    bottom: 10%;
+    right: 36%;
+    cursor: pointer;
+}
+
+.edit:hover{
+    padding: 2px;
+    background-color: #F3F6F2;
+    color:#52E21D;
+}

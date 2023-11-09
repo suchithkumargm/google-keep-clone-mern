@@ -1,0 +1,54 @@
+#sidebar-checkbox {
+    display: none;
+}
+
+#sidebar-hamburger,
+#sidebar-close {
+    position: fixed;
+    left: 0;
+    z-index: 2;
+}
+
+#sidebar-close {
+    display: none;
+}
+
+#sidebar-checkbox:checked~#sidebar-hamburger {
+    display: none;
+}
+
+#sidebar-checkbox:checked~#sidebar-close {
+    display: block;
+}
+
+.sidebar {
+    display: none;
+}
+
+#sidebar-checkbox:checked~.sidebar {
+    display: block;
+    height: 87vh;
+    width: 20%;
+    background-color:#feefc3;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+}
+
+#sidebar-checkbox:checked~#sidebar-close {
+    left: 17%;
+}
+
+.sidebar ul{
+    padding: 2rem;
+}
+
+.sidebar ul li{
+    padding: 1rem 2rem;
+}
+
+.sidebar ul li:hover{
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}

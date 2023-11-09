@@ -1,0 +1,26 @@
+.form{
+    height: 270px;
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke
+}
+
+input{
+    width: 300px;
+    height: 25px;
+}
+
+button{
+    width: 300px;
+    height: 25px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    background-color: #64D9B2;
+    border-radius: 3%;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+}

@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+header .brand{
+    display: flex;
+    align-items: center;
+}
+
+header .brand img{
+    width: 2rem;
+}
+
+header p{
+    font-size: 2rem;
+    color: rgb(70, 70, 70);
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+header .brand p{
+    padding-left: 1rem;
+}
+
+hr{
+    margin: 0;
+}
+
+header a{
+    background-color: #feefc3;
+    text-decoration:none;
+    color: rgb(70, 70, 70);
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight:200;
+}
+
+header a:hover {
+    background-color: #fbe5a5;
+}

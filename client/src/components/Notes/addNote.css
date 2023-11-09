@@ -1,0 +1,60 @@
+.add-note {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(174, 174, 174);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(79, 79, 79, 0.3);
+    padding: 1rem;
+    width: 50%;
+}
+
+.add-note input {
+    border: none;
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
+#note-expand-checkbox {
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    color: black;
+}
+
+.add-note #btn-add-note {
+    width: fit-content;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#title-input,
+#content-input,
+#btn-add-note {
+    display: none;
+}
+
+#note-expand-checkbox:checked~#title-input {
+    display: block;
+}
+
+#note-expand-checkbox:checked~#content-input {
+    display: block;
+}
+
+#note-expand-checkbox:checked~#btn-add-note {
+    display: block;
+}
+
+#note-expand-checkbox:checked+label::before {
+    content: "X";
+    position: relative;
+    left: 97%;
+    font-weight: bold;
+}
+
+#note-expand-checkbox:not(:checked)+label::before {
+    content: "Take a Note";
+}
